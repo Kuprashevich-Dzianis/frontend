@@ -1,0 +1,12 @@
+.box {
+    width: 50;
+    height: 50;
+    margin: 5px 20px 35px;
+    }
+    .gold-box {
+        color: rgb(11, 8, 2);
+    }
+    .gold-box {
+        color: gold;
+    }
+    

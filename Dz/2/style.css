@@ -1,32 +1,53 @@
-/* эти стили применятся ко всем элементам h1 на странице  */
-h1 {
-    /* изменение цвета */
-    color:darkblue;
-    /* выравнивание текста */
-    text-align: center;
+* убирает стандартное поведение контейнеров при котором padding и border расширяют размер контейнера */
+* {
+    box-sizing: border-box;
   }
   
-  p {
-    color: rgb(173, 69, 8);
-    /* стиль написания курсивом */
-    font-style: italic;
+  body {
+    /* убираем стандартные отступы у body */
+    margin: 0px;
   }
   
-  /* селектор по классу (в данном примере - классу desc) */
-  /* приоритетнее, чем селектор по тегу */
+  main {
+    /* внутренние отступы main контейнера */
+    padding: 0px 20px;
+  }
   
+  .box {
+    width: 150px;
+    height: 150px;
+    border: 5px solid cyan;
+    color: white;
+    /* margin: 10px; */
+    padding: 20px;
+    margin: 10px 20px;
+  }
   
-  .desc {
-    font-size: 20px;
+  .red-box {
+    background-color: rgb(255, 111, 111);
+  }
+  
+  .blue-box {
+    background-color: rgb(108, 108, 253);
+    border: 5px dashed greenyellow;
+  }
+  
+  header {
+    height: 60px;
+    background-color: orange;
+  }
+  
+  /* для всех тегов span внутри p */
+  p > span {
+    color:  rgb(255, 111, 111);
     text-decoration: underline;
-    color: rgb(13, 94, 32);
   }
   
-  .violet {
-    color: darkorchid;
+  li {
+    list-style: none;
   }
   
-  /* селектор по id, обладает наивысшим приоритетом */
-  #heading {
-    color: rgb(139, 66, 61);
+  li::before {
+    content: '⭐️';
+    margin-right: 10px;
   }
