@@ -16,3 +16,6 @@ ul > li {
     text-decoration: underline;
     color: orange;
   }
+  .homeworks > li::before {
+    content: '🔥 ';
+  }

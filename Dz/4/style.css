@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+  }
+  header{
+    background-image: url("imagebanner.jpeg");
+  height: 80px;
+  background-size: cover;
+  display: flex;
+  }
+  main {
+    width: 400vh;
+  }
